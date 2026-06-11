@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Picker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Color Picker</h1>
+
+    <div class="preview" id="preview">
+      <span class="label" id="hexLabel">#1a1a1a</span>
+    </div>
+
+    <div class="section-label">Mode</div>
+    <div class="mode-tabs">
+      <button class="active" data-mode="rgb">RGB</button>
+      <button data-mode="hsl">HSL</button>
+    </div>
+
+    <div id="sliders"></div>
+
+    <div class="section-label hex-header">Hex</div>
+    <div class="hex-input-row">
+      <input type="text" id="hexInput" value="#1a1a1a" maxlength="7" />
+      <button id="copyBtn">Copy</button>
+    </div>
+
+    <div class="palette" id="palette"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
